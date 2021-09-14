@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.conta {
+  background: none;
+  position: absolute;
+  top: 230px;
+  width: 80vw;
+  padding: 20px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  background: rgb(245,147,245);
+  background: radial-gradient(circle, rgba(245,147,245,1) 0%, rgba(146,4,242,1) 100%);;
+  color: #fff;
+  padding: 12px;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.but {
+  position: relative;
+  padding: 20px 50px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+  height: 82px;
+  overflow: hidden;
+  margin: 40px;
+  margin-right: 40px;
+  box-shadow: none;
+}
+.but span {
+  position: relative;
+  z-index: 1;
+  color: rgb(27, 27, 27);
+  font-size: 15px;
+  letter-spacing: 6px;
+  align-items: center;
+  text-align: center;
+}
+.but .liquid {
+  position: absolute;
+  left: 0;
+  top: -80px;
+  width: 200px;
+  height: 200px;
+  background:radial-gradient(circle, rgba(205,255,112,1) 0%, rgba(118,161,39,1) 100%);
+  box-shadow: insert 0 0 50px rgba(0,0,0,.5);
+  transition: 0.5s;
+  margin: 0px;
+}
+.but:hover .liquid {
+  top: -120px;
+}
+.but .liquid:before,
+.but .liquid:after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left:50%;
+  top: 0;
+  transform: traslate(-50%,-75%);
+}
+
+.but .liquid:before {
+  border-radius: 45%;
+  background: rgba(20,20,20,1);
+  animation: animate 5s linear infinite;
+}
+.but .liquid:after{
+  border-radius: 40%;
+  background: rgba(20,20,20,0.5);
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  0%
+  {
+    transform: translate(-50%,-75%) rotate(0deg);
+  }
+  100%
+  {
+    transform: translate(-50%,-75%) rotate(360deg);
+  }
+}
+.map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 50vw;
+  padding: 12px;
+  margin-top: 10px;
+}
+.exp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  top: 40px;
+}
+/*Responsive ipad*/
+@media screen and (max-width: 768px) {
+  .conta {
+    width: 120vw;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+/*Responsive iphoneX*/
+@media screen and (max-width: 375px) {
+  .form {
+    width: 320px;
+  }
+}
+
+
