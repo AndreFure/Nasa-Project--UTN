@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>The Lord of the Rings</title>
+</head>
+
+<body>
+  <a name="home"></a>
+  <section class="secpep">
+    <header>
+      <a href="#"><img src="img/tree.png" class="logo" alt=""></a>
+      <div class="toggleMenu" onclick="menuToggle()"></div>
+      <ul class="navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#races">Races</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#chapters">Chapters</a></li>
+      </ul>
+    </header>
+    <div class="contentpep">
+      <div class="textBox">
+        <h2>The Lord of<br><span>the Rings</span></h2>
+        <p>The world has changed.
+          I see it in the water.
+          I feel it in the Earth.
+          I smell it in the air.
+          Much that once was is lost,
+          For none now live who remember it.</p>
+      </div>
+      <div class="imgBox">
+        <img src="img/gandalf.png" class="imgpep" alt="gandalf">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="img/gandalf.png" alt="gandalf" onclick="imgSlider('img/gandalf.png');changeBgColor('#1e1e1e')"></li>
+      <li><img src="img/aragorn.png" alt="aragorn" onclick="imgSlider('img/aragorn.png');changeBgColor('#e60c2c')"></li>
+      <li><img src="img/elrond.png" alt="elrond" onclick="imgSlider('img/elrond.png');changeBgColor('#0d3128')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/lordoftheringstrilogy/"><img src="img/facebook.png" alt="facebook"></a></li>
+      <li><a href="https://twitter.com/lordoftherigns"><img src="img/twitter.png" alt="twitter"></a></li>
+      <li><a href="https://www.instagram.com/thelordoftherings.world/"><img src="img/instagram.png" alt="instagram"></a>
+      </li>
+    </ul>
+  </section>
+  <a name="races"></a>
+  <div class="cvContainer">
+    <div class="containerg">
+      <div class="boxg">
+        <div class="imgBxg">
+          <img src="img/boromir.png" alt="">
+          <div class="contentg">
+            <div>
+              <p class="h2g">THE MEN</p>
+              <p class="pg">Men are one of the races that came together to fight evil. Descendants of the Numenoreans..
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxg">
+        <div class="imgBxg">
+          <img src="img/gimli.png" alt="">
+          <div class="contentg">
+            <div>
+              <p class="h2g">THE DWARVES</p>
+              <p class="pg">Are a race inhabiting Middle-earth, the central continent of Arda in an imagined
+                mythological past.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxg">
+        <div class="imgBxg">
+          <img src="img/hobbits.png" alt="">
+          <div class="contentg">
+            <div>
+              <p class="h2g">THE HOBBITS</p>
+              <p class="pg">The HOBBITS joined the battle against the dark against their principles, as they are humble
+                and prefer the simple
+                life.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxg">
+        <div class="imgBxg">
+          <img src="img/legolas.png" alt="">
+          <div class="contentg">
+            <div>
+              <p class="h2g">THE ELVES</p>
+              <p class="pg">Elves are immortal. They appear in The Hobbit and in The Lord of the Rings, but their
+                history is described more fully in
+                The Silmarillion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax" data-parallax-image="img/1p.png">
+    </div>
+
+  </div>
+  <section class="containershu">
+    <a name="books"></a>
+    <div class="containershuTitle">
+      <h2>Learn about the Lord of the Rings trilogy</h2>
+    </div>
+    <div class="containersh">
+      <div class="boxsh">
+        <p class="namesh">CHAPTER I</p>
+        <a href="#" class="buysh">Buy now</a>
+        <div class="circlesh"></div>
+        <img src="img/tfotr.jpg" class="productsh" alt="the fellowship of the ring">
+      </div>
+      <div class="boxsh">
+        <p class="namesh">CHAPTER II</p>
+        <a href="#" class="buysh">Buy now</a>
+        <div class="circlesh"></div>
+        <img src="img/ttt.jpg" class="productsh" alt="the two towers">
+      </div>
+      <div class="boxsh">
+        <p class="namesh">CHAPTER III</p>
+        <a href="#" class="buysh">Buy now</a>
+        <div class="circlesh"></div>
+        <img src="img/trotk.jpg" class="productsh" alt="the return of the king">
+      </div>
+    </div>
+    <div class="containershuList">
+      <div id="books">
+        <h1>The Lord of Rings Books</h1>
+        <ul id="booksList">
+        </ul>
+      </div>
+      <div id="imgBooks"></div>
+      <input type="submit" value="Books" class="but" id="submit"
+        style="color:white; box-shadow:none; background:#9e3137; border:none">
+    </div>
+  </section>
+
+  <section class="sdse">
+    <div class="sdd">
+      <p class="sdp" style="--i:0.5"><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span
+          class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The
+          Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span>
+      </p>
+      <p class="sdp" style="--i:1.5"><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span
+          class="sds">v</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span
+          class="sds">The Lord of the Rings</span>
+      </p>
+      <p class="sdp" style="--i:2.5"><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span
+          class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The
+          Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span>
+      </p>
+      <p class="sdp" style="--i:1.25"><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span
+          class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The
+          Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span>
+      </p>
+      <p class="sdp" style="--i:0.75"><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span
+          class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The
+          Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span>
+      </p>
+      <p class="sdp" style="--i:3"><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span
+          class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The
+          Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span>
+      </p>
+      <p class="sdp" style="--i:0.35"><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span
+          class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The
+          Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span>
+      </p>
+      <p class="sdp" style="--i:2.35"><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span
+          class="sds">The Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The
+          Lord of the Rings</span><span class="sds">The Lord of the Rings</span><span class="sds">The Lord of the
+          Rings</span><span class="sds">The Lord of the Rings</span>
+      </p>
+    </div>
+  </section>
+  <a name="chapters"></a>
+  <section class="containershuListChapter">
+    <div class="containershuLeft">
+      <div id="char">
+        <h2>Chapters</h2>
+        <ul id="messageUl">
+        </ul>
+        <form class="formChar" id="userMessageInputForm">
+          <input type="submit" id="submit1" value="Search the Chapters" class="submit1">
+        </form>
+      </div>
+    </div>
+    <div class="containershuRight">
+      <div class="square" id="square">
+        <span class="spansq"></span>
+        <span class="spansq"></span>
+        <span class="spansq"></span>
+        <div class="contentsq">
+          <h3 class="square">CHAPTERS OF THE TRILOGY</h3>
+          <p class="psq">The darkness has grown, but the broken sword has been forged anew. Discover all the chapters of
+            the trilogy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="containerfoot">
+    <div class="sec aboutus">
+      <h3>Contact me</h3>
+      <p>If you liked my work, do not hesitate to contact me. I have done this work with much pleasure.</p>
+      <ul class="scift">
+        <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+        <li><a href=""><img src="img/instagram.png" alt=""></a></li>
+        <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+      </ul>
+    </div>
+    <div class="sec quicklinks">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#races">Races</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#chapters">Chapters</a></li>
+      </ul>
+    </div>
+    <div class="sec quicklinks">
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="">Books</a></li>
+        <li><a href="">Movies</a></li>
+        <li><a href="">Gifts</a></li>
+      </ul>
+    </div>
+    <div class="sec contact">
+      <h3>Contac</h3>
+      <ul class="infof">
+        <li>
+          <img src="img/place.png" alt="">
+          <span>647 Linda Street <br>Phoenixville, PA 19460</br>USA</span>
+        </li>
+        <li>
+          <img src="img/phone.png" alt="">
+          <p><a href="tel:+12345678900">+12345678900</a></p>
+        </li>
+        <li>
+          <img src="img/mail.png" alt="">
+          <p><a href="andresgenes01@email.com">andresgenes01@email.com</a></p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <div class="copyrightText">
+    <p>Copyright ® 2022 Andres Genes. All Rights Reserved.</p>
+  </div>
+
+  <script src="vanilla-tilt.min.js"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script src="universal-parallax.min.js"></script>
+  <script src="main.js"></script>
+  <script src="app.js"></script>
+  <script src="app1.js"></script>
+  <script>
+    new universalParallax().init({
+      speed: 2
+    });
+  </script>
+</body>
+
+</html>

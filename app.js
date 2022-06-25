@@ -1,35 +1,24 @@
-const path = require('path');
-const hbs = require('hbs');
-const express = require('express');
-const app = express();
+let but = document.querySelector('.but');
+let submit = document.getElementById('submit');
+let books = document.getElementById('books');
+let imgBooks = document.getElementById('imgBooks');
+let booksList = document.getElementById('booksList');
 
+//--------------For books-------------
 
-const viewsPath = path.join(__dirname, 'templates/views');
-const partialPath = path.join(__dirname, 'templates/partials');
-const publicPath = path.join(__dirname, 'public');
+const url = 'https://the-one-api.dev/v2/book';
 
-app.use(express.static(publicPath))
-app.set('view engine', 'hbs');
-app.set('views', viewsPath);
-hbs.registerPartials(partialPath);
+//Event
+but.addEventListener('click', callAPI);
 
-app.get('', (req, res) => {
-  res.render('index');
-});
-app.get('/contacto', (req, res) => {
-  res.render('contacto');
-
-});
-app.listen(3000, () => { console.log('La conexión fue exitosa') });
-
-app.get('', (req, res) => {
-  posts.getPosts((err, response) => {
-    if (err) {
-      return res.send(err);
-    }
-    res.render('index', {
-      response,
-    });
-  })
-});
-
+//functions
+async function callAPI() {
+  const booksResponse = await fetch(url)
+  const data = await booksResponse.json()
+  for (let i = 0; data.docs.length; i++) {
+    const taski = data.docs[i].name;
+    const li = document.createElement('li');
+    li.innerHTML = taski;
+    document.querySelector('#booksList').append(li);
+  }
+}
